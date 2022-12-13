@@ -19,6 +19,7 @@ public class Personne
 	public String telephone;
 	
 	public LocalDate naissance;
+    public GroupeSanguin gs;
 
     public Personne(String numeroINSEE, String nom, String prenom, String adresse, String telephone, LocalDate naissance) {
         setNumeroINSEE(numeroINSEE); // Le mutateur fait le contrôle non null
@@ -27,6 +28,7 @@ public class Personne
         this.adresse = adresse;
         this.telephone = telephone;
         this.naissance = naissance;
+        this.gs = gs;
     }
 
     public String getNumeroINSEE() {
